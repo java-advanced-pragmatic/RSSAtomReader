@@ -16,4 +16,11 @@
       </plugin>
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>rome</groupId>
+  		<artifactId>rome</artifactId>
+  		<version>1.0</version>
+  	</dependency>
+  </dependencies>
 </project>

@@ -6,7 +6,7 @@ public interface FeedController {
 
 	public void AddFeedSource(String URL);
 	
-	public void RemoveFeedSource();
+	public void RemoveFeedSource(Channel feed);
 	
 	public List<Channel> ReturnAllFeedSources();
 	

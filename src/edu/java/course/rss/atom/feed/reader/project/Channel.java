@@ -1,11 +1,44 @@
 package edu.java.course.rss.atom.feed.reader.project;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class Channel {
 
-	/*public <title>RSS Title</title>
-	 <description>This is an example of an RSS feed</description>
-	 <link>http://www.example.com/main.html</link>
-	 <lastBuildDate>Mon, 06 Sep 2010 00:01:00 +0000 </lastBuildDate>
-	 <pubDate>Sun, 06 Sep 2009 16:20:00 +0000</pubDate>
-	 <ttl>1800</ttl>*/
+	private String title;
+	private String description;
+	private URL link;
+	 
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	public String getLink() {
+		return link.getPath();
+	}
+	
+	public void setLink(String url) {
+		if(link == null){
+			try {
+				link = new URL(url);
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} 
+		
+	}
+	 
 }
