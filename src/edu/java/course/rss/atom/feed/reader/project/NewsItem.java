@@ -1,12 +1,14 @@
 package edu.java.course.rss.atom.feed.reader.project;
 
+import java.util.Date;
+
 public class NewsItem {
 	
 	private String title;
 	private String description;
 	private String link;
 	//TODO use DateTIme API
-	private String pubDate;
+	private Date pubDate;
 	
 	private boolean isRead;
 
@@ -34,12 +36,12 @@ public class NewsItem {
 		this.link = link;
 	}
 
-	public String getPubDate() {
+	public Date getPubDate() {
 		return pubDate;
 	}
 
-	public void setPubDate(String pubDate) {
-		this.pubDate = pubDate;
+	public void setPubDate(Date date) {
+		this.pubDate = date;
 	}
 
 	public boolean isRead() {

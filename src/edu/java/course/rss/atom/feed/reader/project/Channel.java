@@ -2,19 +2,20 @@ package edu.java.course.rss.atom.feed.reader.project;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import javafx.beans.property.SimpleStringProperty;
 
 public class Channel {
 
-	private String title;
+	private SimpleStringProperty title = new SimpleStringProperty("");;
 	private String description;
 	private URL link;
 	 
 	public String getTitle() {
-		return title;
+		return title.get();
 	}
 	
 	public void setTitle(String title) {
-		this.title = title;
+		this.title.set(title);
 	}
 	
 	public String getDescription() {
